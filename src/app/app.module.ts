@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { WebsiteLayoutComponent } from './layouts/website-layout/website-layout.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { BlogComponent } from './pages/blog/blog.component';
+import { WorkComponent } from './pages/work/work.component';
+import { HeaderComponent } from './components/header/header.component'
 @NgModule({
   declarations: [
     AppComponent,
     WebsiteLayoutComponent,
-    AdminLayoutComponent
+    AdminLayoutComponent,
+    BlogComponent,
+    WorkComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

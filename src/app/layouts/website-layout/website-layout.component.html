@@ -1,18 +1,7 @@
 <div class="w-[1152px] mx-auto  ">
-    <header class="mb-[157px] mt-[15px] ">
-      <div class="logo">
-  
-      </div>
-      <div class="menu flex flex-row-reverse mr-[150px]">
-        <ul class="grid grid-cols-3 gap-3 font-bold text-[20px] text-center">
-          <li class=""><a href="./work.html">Works</a></li>
-          <li class=""><a href="./blog.html">Blog</a></li>
-          <li class=""><a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </header>
+    <app-header></app-header>
     <section class="content w-full mb-[58px]">
-      <div class="container w-[74%] mx-auto grid grid-cols-2 gap-4" *ngFor="let user of User">
+      <div class="container w-[74%] mx-auto grid grid-cols-2 gap-4" *ngFor="let user of User;">
         <div class="profile grid ">
           <h2 class="font-bold text-[41px] mb-[24px] pt-[14px]">Hi, I am <span>{{user.name}}</span>,
             <br>
@@ -25,7 +14,7 @@
             Resume</button>
         </div>
         <div class="image">
-          <img src=""
+          <img src="{{user.image}}"
             class="ml-auto w-[246px] h-auto rounded-full object-cover" alt="">
         </div>
       </div>
@@ -34,7 +23,7 @@
       <div class="container w-[75%] mx-auto">
         <div class="pt-[16px] grid grid-cols-2 mb-[20px] ">
           <span class="text-[23px] pl-[5px]">Recent posts</span>
-          <a href="#" class="text-[#00A8CC] ml-auto pt-[5px] text-[17px] hover:underline">View all</a>
+          <a routerLink="#" class="text-[#00A8CC] ml-auto pt-[5px] text-[17px] hover:underline">View all</a>
         </div>
         <div class="box pb-[30px] grid grid-cols-2 gap-4">
           <div class=" bg-white rounded-[5px] w-[420px] h-[295px]">
@@ -43,7 +32,7 @@
               <div class="grid grid-cols-3 ">
                 <p class="text-[19px]">12 Feb 2020</p>
                 <p class="w-12 text-[19px] ">|</p>
-                <a href="#" class="text-[19px] ml-[-82px]">Cate</a>
+                <a routerLink="#" class="text-[19px] ml-[-82px]">Cate</a>
   
               </div>
               <span>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
@@ -58,7 +47,7 @@
               <div class="grid grid-cols-3 ">
                 <p class="text-[19px]">12 Feb 2020</p>
                 <p class="w-12 text-[19px] ">|</p>
-                <a href="#" class="text-[19px] ml-[-82px]">Cate</a>
+                <a routerLink="#" class="text-[19px] ml-[-82px]">Cate</a>
   
               </div>
               <span>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
@@ -137,10 +126,10 @@
     <footer class="w-full">
       <div class="grid grid-rows-2 gap-4 w-[20%] mx-auto">
         <div class="flex  ">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-instagram"></a>
+          <a routerLink="#" class="fa fa-facebook"></a>
+          <a routerLink="#" class="fa fa-twitter"></a>
+          <a routerLink="#" class="fa fa-linkedin"></a>
+          <a routerLink="#" class="fa fa-instagram"></a>
         </div>
         <p class="text-[14px]">Copyright ©2020 All rights reserved </p>
       </div>
