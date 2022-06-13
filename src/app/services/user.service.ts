@@ -7,7 +7,7 @@ import { IUser } from '../models/User';
   providedIn: 'root'
 })
 export class UserService {
-  API_URL : string = "http://localhost:3001/Users"
+  API_URL : string = "http://localhost:3001/User"
   constructor(private http: HttpClient) { }
   getUser():Observable<IUser[]>{
     return this.http.get<IUser[]>(this.API_URL)

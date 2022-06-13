@@ -1,8 +1,5 @@
 {
-  "usersign": [
-    
-  ],
-  "users": [
+  "user": [
     {
       "id": "1",
       "name": "Sang",
@@ -10,6 +7,20 @@
       "about": "aaaaaa",
       "cv": "string",
       "image": "https://res.cloudinary.com/dkhutgvlb/image/upload/v1654859446/277302488_699416914577375_3121533364294341597_n_1_dbuaqn.jpg"
+    }
+  ],
+  "users": [
+    {
+      "email": "sang2002@gmail.com",
+      "password": "$2a$10$aZzFSBO9q5wYfLD2V8RGJOrXCvqocMIaluZ48V82vzAOxzeVHXegK",
+      "name": "sang",
+      "id": "zte5Z53"
+    },
+    {
+      "email": "sang2k2@gmail.com",
+      "password": "$2a$10$gykhEda62B7DLOO3X5wnoO.6.yClTkbzGYJ/RJ8SGb0o4oY2NlRUu",
+      "name": "sang",
+      "id": "v9ycMiN"
     }
   ],
   "posts": [

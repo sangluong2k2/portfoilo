@@ -20,7 +20,7 @@ export class SignupComponent implements OnInit {
   }
   onSubmit(){
     this.userService.createUser(this.User).subscribe(data => {
-      this.router.navigate(['/signin'])
+      this.router.navigate(['signin'])
     })
   }
 

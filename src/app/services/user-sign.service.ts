@@ -6,10 +6,10 @@ import { UserType } from '../models/UserSign';
   providedIn: 'root'
 })
 export class UserSignService {
-  API_URL: string = "http://localhost:3001"
+  API_URL: string = "http://localhost:3001/"
   constructor(private http: HttpClient) { }
    createUser(users: UserType){
-    return this.http.post(`${this.API_URL}users`,users)
+    return this.http.post(`${this.API_URL}usersign`,users)
    }
    signin(user: UserType){
     return this.http.post(`${this.API_URL}login`,user)
