@@ -8,7 +8,7 @@ import { PostService } from 'src/app/services/post.service';
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent implements OnInit {
-  PostList!: IPost
+  PostList!: IPost[] | any
   constructor(private postServices: PostService) { }
 
   ngOnInit(): void {
@@ -17,7 +17,7 @@ export class BlogComponent implements OnInit {
 
   showPost(){
     this.postServices.getPosts().subscribe(data => {
-      this.postServices
+      this.PostList = data
     })
   }
 

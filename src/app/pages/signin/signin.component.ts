@@ -20,7 +20,7 @@ export class SigninComponent implements OnInit {
   onSubmit(){
     this.userService.signin(this.User).subscribe(data => {
       localStorage.setItem('user', JSON.stringify(data))
-      this.router.navigate([''])
+      this.router.navigate(['/admin'])
     })
   }
 }

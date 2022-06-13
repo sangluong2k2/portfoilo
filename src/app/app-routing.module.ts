@@ -6,6 +6,7 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { SigninComponent } from './pages/signin/signin.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { WorkComponent } from './pages/work/work.component';
+import { GuardGuard } from './services/guard/guard.guard';
 
 const routes: Routes = [
   {path: "", component: WebsiteLayoutComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: "signin", component: SigninComponent},
   {path: "signup", component: SignupComponent},
   {path: "**", component:WebsiteLayoutComponent}
+  
 
 ];
 

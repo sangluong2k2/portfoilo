@@ -3,7 +3,7 @@ export interface IProject {
     name: string,
     image: string,
     createAt: string,
-    categoryProjectId: string,
-    shortDesc: string,
+    categoriesProjectId: string,
+    short_desc: string,
     desc: string
 }

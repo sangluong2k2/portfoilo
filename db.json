@@ -12,15 +12,9 @@
   "users": [
     {
       "email": "sang2002@gmail.com",
-      "password": "$2a$10$aZzFSBO9q5wYfLD2V8RGJOrXCvqocMIaluZ48V82vzAOxzeVHXegK",
+      "password": "$2a$10$TXvW4CZeKo9OMaC3gKaZQeuggOmpKtK75lgSd36cKYIKe8fk/wW22",
       "name": "sang",
-      "id": "zte5Z53"
-    },
-    {
-      "email": "sang2k2@gmail.com",
-      "password": "$2a$10$gykhEda62B7DLOO3X5wnoO.6.yClTkbzGYJ/RJ8SGb0o4oY2NlRUu",
-      "name": "sang",
-      "id": "v9ycMiN"
+      "id": 1
     }
   ],
   "posts": [
@@ -59,6 +53,25 @@
       "name": "Pattern"
     }
   ],
-  "project": [],
-  "categoriesProjects": []
+  "projects": [
+    {
+      "id": 1,
+      "name": "Website Mixi shop",
+      "image": "aaa.img",
+      "createAt": "2022",
+      "categoriesProjectId": 1,
+      "short_desc": "aaaaaaaa",
+      "desc": "ấdasdasdasd"
+    }
+  ],
+  "categoriesProjects": [
+    {
+      "id": 1,
+      "name": "Công Nghệ"
+    },
+    {
+      "id": 2,
+      "name": "Tin Tức"
+    }
+  ]
 }

@@ -1,33 +1,29 @@
 <div class="w-[1152px] mx-auto  ">
     <app-header></app-header>
     <section class="project__posts w-full mb-[110px]">
-        <div class="container  w-[47%] mx-auto">
-            <p class="text-[35px] font-bold">Work</p>
-            <div class="grid grid-rows-2 gap-4 mt-[18px]">
-                <div class=" border-b border-inherit flex ">
-                    <div class="w-[195px] mr-[14px]">
-                        <img class="w-[195px] h-[156px] object-cover rounded-[20px]" src="./images/Styleshout.png"
-                            alt="">
-                    </div>
-                    <div class=" w-[69%] pb-[20px]">
-                        <p class="text-[24px] font-bold pb-[14px]">Designing Dashboards</p>
-                        <div class="pb-[20px] flex">
-                            <button
-                                class="rounded-[40px] border bg-[#142850] text-white font-bold w-[64px] text-[18px] ">2020
-                            </button>
-                            <p class=" mr-[411px] text-[19px] ">Dashboard</p>
-                        </div>
-                        <p> Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                        </p>
-                    </div>
+        <div class="container  w-[74%] mx-auto">
+          <p class="text-[23px]">Works</p>
+          <div class="grid grid-rows-2 gap-4 mt-[30px]" *ngFor="let project of Project ">
+            <div class=" border-b border-inherit ">
+              <div class="w-[246px] float-left mr-[14px]">
+                <img class="w-[246px] h-[180px] object-cover rounded-[20px]"
+                  src="{{project.image}}"
+                  alt="">
+              </div>
+              <div class="float-right w-[69%] pb-[20px]" >
+                <p class="text-[29px] font-bold pb-[14px]">{{project.name}}</p>
+                <div class="pb-[20px]">
+                  <button class="rounded-[40px] border bg-[#142850] text-white font-bold w-[64px] text-[18px] ">{{project.createAt}}
+                  </button>
+                  <p class="float-right mr-[411px] text-[19px] ">{{project.categoriesProject.name}}</p>
                 </div>
-
-               
-
+                <p>{{project.short_desc}}
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
     <footer class="w-full">
             <div class="grid grid-rows-2 gap-4 w-[20%] mx-auto">
                 <div class="flex  ">

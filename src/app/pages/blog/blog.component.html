@@ -4,25 +4,10 @@
         <div class="w-[47%] mx-auto">
             <p class="text-[34px] font-bold  mb-[37px]">Blog</p>
                 <div class="grid grid-rows-4 gap-3">
-                    <div class="border-b border-inherit mb-[30px]">
-                        <p class="font-bold text-[24px] mb-[5px]">UI Interactions of the week</p>
-                        <p class="mb-[5px]">12 Feb 2019 </p>
-                        <p class="text-[12px] mb-[6px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    </div>
-                    <div class="border-b border-inherit">
-                        <p class="font-bold text-[24px] mb-[5px]">UI Interactions of the week</p>
-                        <p class="mb-[5px]">12 Feb 2019 </p>
-                        <p class="text-[12px] mb-[6px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    </div>
-                    <div class="border-b border-inherit">
-                        <p class="font-bold text-[24px] mb-[5px]">UI Interactions of the week</p>
-                        <p class="mb-[5px]">12 Feb 2019 </p>
-                        <p class="text-[12px] mb-[6px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    </div>
-                    <div class="border-b border-inherit">
-                        <p class="font-bold text-[24px] mb-[5px]">UI Interactions of the week</p>
-                        <p class="mb-[5px]">12 Feb 2019 </p>
-                        <p class="text-[12px] mb-[6px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <div class="border-b border-inherit mb-[30px]" *ngFor="let post of PostList">
+                        <p class="font-bold text-[24px] mb-[5px]">{{post.title}}</p>
+                        <p class="mb-[5px]">{{post.created_at}}</p>
+                        <p class="text-[12px] mb-[6px]">{{post.short_desc}}</p>
                     </div>
                 </div>
         </div>

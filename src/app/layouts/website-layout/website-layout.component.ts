@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { IPost } from 'src/app/models/Posts';
+import { IProject } from 'src/app/models/Projects';
 import { IUser } from 'src/app/models/User';
 import { PostService } from 'src/app/services/post.service';
+import { ProjectService } from 'src/app/services/project.service';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
@@ -11,13 +13,16 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class WebsiteLayoutComponent implements OnInit {
   User!: IUser[];
-  Post!: IPost[]
+  Post!: IPost[] | any;
+  Project!: IProject[] |any
   constructor(
     private userServices: UserService,
-    private postServices: PostService
+    private postServices: PostService,
+    private projectServices: ProjectService
     ) { 
     this.showUser()
     this.showPost()
+    this.showProject()
   }
 
   ngOnInit(): void {
@@ -28,6 +33,11 @@ export class WebsiteLayoutComponent implements OnInit {
   showPost(){
     this.postServices.getPostsHome().subscribe(data => {
       this.Post = data
+    })
+  }
+  showProject(){
+    this.projectServices.getprojectsHome().subscribe(data => {
+      this.Project = data
     })
   }
 
