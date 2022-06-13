@@ -12,9 +12,10 @@ import { WorkComponent } from './pages/work/work.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { SigninComponent } from './pages/signin/signin.component';
-import { PostComponent } from './pages/admin/post/post.component';
-import { ProjectComponent } from './pages/admin/project/project.component';
-import { UserComponent } from './pages/admin/user/user.component'
+import { PostComponent } from './pages/admin/PostsAdmin/post/post.component';
+import { ProjectComponent } from './pages/admin/ProjectAdmin/project/project.component';
+import { UserComponent } from './pages/admin/UserAdmin/user/user.component';
+import { AddComponent } from './pages/admin/PostsAdmin/add/add.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { UserComponent } from './pages/admin/user/user.component'
     SigninComponent,
     PostComponent,
     ProjectComponent,
-    UserComponent
+    UserComponent,
+    AddComponent
   ],
   imports: [
     BrowserModule,

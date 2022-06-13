@@ -9,14 +9,7 @@
       "image": "https://res.cloudinary.com/dkhutgvlb/image/upload/v1654859446/277302488_699416914577375_3121533364294341597_n_1_dbuaqn.jpg"
     }
   ],
-  "users": [
-    {
-      "email": "sang2002@gmail.com",
-      "password": "$2a$10$TXvW4CZeKo9OMaC3gKaZQeuggOmpKtK75lgSd36cKYIKe8fk/wW22",
-      "name": "sang",
-      "id": 1
-    }
-  ],
+  "users": [],
   "posts": [
     {
       "id": 1,
