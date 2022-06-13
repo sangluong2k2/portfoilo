@@ -11,7 +11,10 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { WorkComponent } from './pages/work/work.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SignupComponent } from './pages/signup/signup.component';
-import { SigninComponent } from './pages/signin/signin.component'
+import { SigninComponent } from './pages/signin/signin.component';
+import { PostComponent } from './pages/admin/post/post.component';
+import { ProjectComponent } from './pages/admin/project/project.component';
+import { UserComponent } from './pages/admin/user/user.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +24,10 @@ import { SigninComponent } from './pages/signin/signin.component'
     WorkComponent,
     HeaderComponent,
     SignupComponent,
-    SigninComponent
+    SigninComponent,
+    PostComponent,
+    ProjectComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
