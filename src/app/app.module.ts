@@ -9,7 +9,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BlogComponent } from './pages/blog/blog.component';
 import { WorkComponent } from './pages/work/work.component';
-import { HeaderComponent } from './components/header/header.component'
+import { HeaderComponent } from './components/header/header.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { SigninComponent } from './pages/signin/signin.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,9 @@ import { HeaderComponent } from './components/header/header.component'
     AdminLayoutComponent,
     BlogComponent,
     WorkComponent,
-    HeaderComponent
+    HeaderComponent,
+    SignupComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,

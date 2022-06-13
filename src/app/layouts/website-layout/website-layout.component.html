@@ -1,7 +1,7 @@
-<div class="w-[1152px] mx-auto  ">
+<div class="w-[1152px] mx-auto sm:w-[1152px]  ">
     <app-header></app-header>
     <section class="content w-full mb-[58px]">
-      <div class="container w-[74%] mx-auto grid grid-cols-2 gap-4" *ngFor="let user of User;">
+      <div class="container w -[74%] mx-auto grid grid-cols-2 gap-4" *ngFor="let user of User;">
         <div class="profile grid ">
           <h2 class="font-bold text-[41px] mb-[24px] pt-[14px]">Hi, I am <span>{{user.name}}</span>,
             <br>
@@ -19,41 +19,24 @@
         </div>
       </div>
     </section>
+
     <section class="recent__posts w-full bg-[#EDF7FA] mb-[25px] ">
       <div class="container w-[75%] mx-auto">
         <div class="pt-[16px] grid grid-cols-2 mb-[20px] ">
           <span class="text-[23px] pl-[5px]">Recent posts</span>
-          <a routerLink="#" class="text-[#00A8CC] ml-auto pt-[5px] text-[17px] hover:underline">View all</a>
+          <a routerLink="/blog" class="text-[#00A8CC] ml-auto pt-[5px] text-[17px] hover:underline">View all</a>
         </div>
         <div class="box pb-[30px] grid grid-cols-2 gap-4">
-          <div class=" bg-white rounded-[5px] w-[420px] h-[295px]">
+          <div class=" bg-white rounded-[5px] w-[420px] h-[295px]" *ngFor="let post of Post">
             <div class=" inline-block p-[20px] px-[26px] grid gap-[23px]">
-              <span class="text-[26px] font-bold ">Making a design system from scratch</span>
+              <span class="text-[26px] font-bold ">{{post.title}}</span>
               <div class="grid grid-cols-3 ">
-                <p class="text-[19px]">12 Feb 2020</p>
+                <p class="text-[19px]">{{post.created_at}}</p>
                 <p class="w-12 text-[19px] ">|</p>
-                <a routerLink="#" class="text-[19px] ml-[-82px]">Cate</a>
+                <a routerLink="#" class="text-[19px] ml-[-82px]">{{post.categoryId}}</a>
   
               </div>
-              <span>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                officia
-                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                amet.</span>
-            </div>
-          </div>
-          <div class=" bg-white rounded-[5px] w-[420px] h-[295px]">
-            <div class=" inline-block p-[20px] px-[26px] grid gap-[23px]">
-              <span class="text-[26px] font-bold ">Making a design system from scratch</span>
-              <div class="grid grid-cols-3 ">
-                <p class="text-[19px]">12 Feb 2020</p>
-                <p class="w-12 text-[19px] ">|</p>
-                <a routerLink="#" class="text-[19px] ml-[-82px]">Cate</a>
-  
-              </div>
-              <span>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                officia
-                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                amet.</span>
+              <span>{{post.short_desc}}</span>
             </div>
           </div>
         </div>
